@@ -41,6 +41,7 @@ in
     vscode
     telegram-desktop
     keeweb
+    whatsapp-for-linux
   ];
 
   # Workaround the annoying `Failed to start Network Manager Wait Online` error on switch.
