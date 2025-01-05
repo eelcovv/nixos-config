@@ -40,6 +40,7 @@ in
     google-chrome
     vscode
     telegram-desktop
+    keeweb
   ];
 
   # Workaround the annoying `Failed to start Network Manager Wait Online` error on switch.
