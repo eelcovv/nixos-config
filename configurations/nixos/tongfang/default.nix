@@ -34,6 +34,8 @@ in
   programs.steam.enable = true;
 
   environment.systemPackages = with pkgs; [
+    vim
+    git
     firefox
     google-chrome
     vscode
