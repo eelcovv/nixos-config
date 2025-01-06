@@ -3,7 +3,7 @@
   programs.kitty = {
     enable = true;
     # Pick "name" from https://github.com/kovidgoyal/kitty-themes/blob/master/themes.json
-    theme = "Tokyo Night";
+    themeFile = "1984_dark";
     font = {
       name = "Monaco";
       size = 14;
