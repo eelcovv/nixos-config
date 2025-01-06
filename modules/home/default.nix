@@ -1,3 +1,4 @@
+# imported by all users of all systems
 {
   home.stateVersion = "22.11";
   imports = [
@@ -7,7 +8,10 @@
     ./all/ssh.nix
     ./all/starship.nix
     ./all/terminal.nix
+    # ./all/internet.nix
+    # ./profiles/development.nix
     ./all/nix.nix
+    ./all/internet.nix
     ./all/git.nix
     ./all/direnv.nix
     ./all/zellij.nix

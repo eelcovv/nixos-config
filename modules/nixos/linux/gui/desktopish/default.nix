@@ -10,7 +10,6 @@
     ./autolock.nix
     ./redshift.nix
     ./gnome-keyring.nix
-    ./guiapps.nix
     ./polybar.nix
     ./hotplug.nix
 

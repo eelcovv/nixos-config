@@ -38,7 +38,6 @@ in
     git
     firefox
     google-chrome
-    vscode
     telegram-desktop
     keeweb
     whatsapp-for-linux
