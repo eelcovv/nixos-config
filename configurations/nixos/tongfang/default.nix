@@ -36,12 +36,6 @@ in
   environment.systemPackages = with pkgs; [
     vim
     git
-    firefox
-    google-chrome
-    telegram-desktop
-    keeweb
-    whatsapp-for-linux
-    vmware-horizon-client
   ];
 
   # Workaround the annoying `Failed to start Network Manager Wait Online` error on switch.
