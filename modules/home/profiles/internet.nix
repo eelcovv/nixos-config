@@ -5,8 +5,10 @@
     epiphany
     google-chrome
     brave
-    telegram-desktop
     qutebrowser
-    tor
+    tor-browser
+    protonmail-desktop
+    BiglyBT # torrent client
+    transmission_4 # torrent client 
   ];
 }
