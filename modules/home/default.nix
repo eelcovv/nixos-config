@@ -11,7 +11,6 @@
     ./all/terminal.nix
     # ./profiles/development.nix
     ./all/nix.nix
-    ./all/internet.nix
     ./all/git.nix
     ./all/direnv.nix
     ./all/zellij.nix
