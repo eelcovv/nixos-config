@@ -6,5 +6,7 @@
     google-chrome
     brave
     telegram-desktop
+    qutebrowser
+    tor
   ];
 }
