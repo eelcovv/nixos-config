@@ -1,9 +1,9 @@
 {
-  time.timeZone = "America/New_York";
+  time.timeZone = "Europe/Amsterdam";
 
   location = {
-    # Quebec City
-    latitude = 46.813359;
-    longitude = -71.215796;
+    # Amsterdam
+    latitude = 52.37;
+    longitude = 4.88;
   };
 }
