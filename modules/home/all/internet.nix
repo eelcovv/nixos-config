@@ -1,5 +1,10 @@
+{ pkgs }:
 {
-  programs.firefox = {
-    enable = true;
-  };
+  home.packages = with pkgs; [
+    firefox
+    epiphany
+    google-chrome
+    brave
+    telegram-desktop
+  ];
 }
