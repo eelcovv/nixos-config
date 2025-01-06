@@ -2,13 +2,13 @@
 {
   home.stateVersion = "22.11";
   imports = [
+    ./profiles/internet.nix
     ./all/tmux.nix
     ./all/neovim
     # ./helix.nix
     ./all/ssh.nix
     ./all/starship.nix
     ./all/terminal.nix
-    # ./all/internet.nix
     # ./profiles/development.nix
     ./all/nix.nix
     ./all/internet.nix
