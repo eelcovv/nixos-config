@@ -7,6 +7,10 @@
       ./hardware-configuration.nix
     ];
 
+  # config.permittedInsecurePackages = [
+  #   "jitsi-meet-1.0.8043"
+  # ];
+
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
@@ -55,9 +59,6 @@
   # services.xserver.libinput.enable = true;
 
   # add permissions
-  nixpkgs.config.permittedInsecurePackages = [
-    "jitsi-meet-1.0.8043"
-  ];
 
 
   # This value determines the NixOS release from which the default
@@ -68,8 +69,5 @@
   # (e.g. man configuration.nix or on https://nixos.org/nixos/options.html).
   system.stateVersion = "24.05"; # Did you read the comment?
 
-  #nixpkgs.config.permittedInsecurePackages = [
-  #  "jitsi-meet-1.0.8043"
-  #];
 
 }

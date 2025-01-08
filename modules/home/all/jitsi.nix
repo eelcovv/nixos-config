@@ -2,6 +2,6 @@
 {
   home.packages = with pkgs; [
     jitsi
-    jitsi-meet
+    # jitsi-meet 
   ];
 }
