@@ -21,6 +21,10 @@ pureintent:
 gate:
     nix run . gate
 
+# Clean the cache
+clean:
+    nix-collect-garbage
+
 # Format the nix source tree
 fmt:
     pre-commit run --all-files
