@@ -7,6 +7,5 @@
     geeqie
     thumbs
     cheese
-    cheesecutter
   ];
 }
