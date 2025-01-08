@@ -38,6 +38,7 @@ in
     git
     v4l-utils
     usbutils
+    libwebcam
   ];
   # run video driver test with
   #  gst_all_1.gst-plugins-base
