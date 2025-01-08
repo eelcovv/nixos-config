@@ -4,10 +4,12 @@ let
 
   appreciate = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAICra+ZidiwrHGjcGnyqPvHcZDvnGivbLMayDyecPYDh0";
   pureintent = "ssh-ed25519 AAAAC3NzaC1lZDI1NTE5AAAAIBpnQ8QqgPexJqAXLgezHlmJth7WOUzfp5gC36QrcMuT";
-  systems = [ appreciate pureintent ];
+  # systems = [ appreciate pureintent ];
+  systems = [ appreciate ];
 in
 {
-  "hedgedoc.env.age".publicKeys = users ++ systems;
-  "github-nix-ci/srid.token.age".publicKeys = users ++ systems;
-  "pureintent-basic-auth.age".publicKeys = users ++ systems;
+  # check later, but switch this off for now
+  #hedgedoc.env.age".publicKeys = users ++ systems;
+  #"github-nix-ci/srid.token.age".publicKeys = users ++ systems;
+  # "pureintent-basic-auth.age".publicKeys = users ++ systems;
 }
