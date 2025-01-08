@@ -12,14 +12,18 @@
   # ];
 
   # Bootloader.
-  boot.loader.systemd-boot.enable = true;
-  boot.loader.efi.canTouchEfiVariables = true;
+  boot.loader.grub.enable = true;
+  boot.loader.grub.device = "/dev/nvme0n1";
+  boot.loader.grub.useOSProber = true;
 
   networking.hostName = "alloy"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
   # Enable networking
   networking.networkmanager.enable = true;
+
+  # Set your time zone.
+  time.timeZone = "Europe/Amsterdam";
 
   # Select internationalisation properties.
   i18n.defaultLocale = "en_US.UTF-8";
