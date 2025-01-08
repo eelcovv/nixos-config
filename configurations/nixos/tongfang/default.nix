@@ -38,12 +38,12 @@ in
     git
     v4l-utils
     usbutils
-    gst_all_1.gst-plugins-base
-    gst_all_1.gst-plugins-good
-    gst_all_1.gst-plugins-bad
-    gst_all_1.gst-plugins
   ];
   # run video driver test with
+  #  gst_all_1.gst-plugins-base
+  #  gst_all_1.gst-plugins-good
+  #  gst_all_1.gst-plugins-bad
+  #  gst_all_1.gst-plugins
 
 
 
