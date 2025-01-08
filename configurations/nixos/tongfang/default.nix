@@ -7,7 +7,7 @@ in
 {
   imports = [
     self.nixosModules.default
-    inputs.nixos-hardware.nixosModules.lenovo-thinkpad-p14s-amd-gen4
+    # inputs.nixos-hardware.nixosModules.lenovo-thinkpad-p14s-amd-gen4
     ./configuration.nix
     (self + /modules/nixos/linux/distributed-build.nix)
     (self + /modules/nixos/linux/gui/logseq.nix)
@@ -41,4 +41,12 @@ in
   # Workaround the annoying `Failed to start Network Manager Wait Online` error on switch.
   # https://github.com/NixOS/nixpkgs/issues/180175
   systemd.services.NetworkManager-wait-online.enable = false;
+
+  # https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
+  boot.kernel.sysctl = {
+    "fs.inotify.max_user_watches" = "524288";
+  };
+
+  # https://unix.stackexchange.com/q/659901/14042
+  services.gnome.gnome-keyring.enable = true;
 }

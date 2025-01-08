@@ -17,6 +17,8 @@ in
     moreutils # ts, etc.
     gnumake
     killall
+    tree
+    trash-cli
     # Broken, https://github.com/NixOS/nixpkgs/issues/299680
     # ncdu
 
@@ -55,6 +57,7 @@ in
   fonts.fontconfig.enable = true;
 
   home.shellAliases = {
+    rm = "trash-put";
     e = "nvim";
     g = "git";
     lg = "lazygit";
