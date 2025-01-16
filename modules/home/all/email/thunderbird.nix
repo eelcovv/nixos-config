@@ -13,10 +13,10 @@
   };
 
   accounts.email.accounts = {
-    "srid@srid.ca".thunderbird = {
+    "eelco@davelap.nl".thunderbird = {
       enable = true;
     };
-    "sridhar.ratnakumar@juspay.in".thunderbird = {
+    "eelcovv@gmail.com".thunderbird = {
       enable = true;
     };
   };

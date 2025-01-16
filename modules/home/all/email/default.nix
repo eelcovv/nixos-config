@@ -1,11 +1,10 @@
 let
   iCloudMailSettings = {
     imap = {
-      host = "imap.mail.me.com";
-      port = 993;
+      host = "mail.davelab.nl";
     };
     smtp = {
-      host = "smtp.mail.me.com";
+      host = "mail.davelab.nl";
       port = 587;
       tls.useStartTls = true;
     };
@@ -28,18 +27,18 @@ in
     ./thunderbird.nix
   ];
   accounts.email.accounts = {
-    "srid@srid.ca" = iCloudMailSettings // {
+    "eelco@davelab.nl" = iCloudMailSettings // {
       primary = true;
-      realName = "Sridhar Ratnakumar";
-      address = "happyandharmless@icloud.com";
-      aliases = [ "srid@srid.ca" ];
-      userName = "happyandharmless";
+      realName = "Eelco van Vliet";
+      address = "eelco@davelab.nl";
+      aliases = [ "eelco@davelab.nl" ];
+      userName = "eelco";
       passwordCommand = "op read op://Personal/iCloud-Apple/home-manager";
     };
-    "sridhar.ratnakumar@juspay.in" = GmailSettings // {
-      realName = "Sridhar Ratnakumar";
-      address = "sridhar.ratnakumar@juspay.in";
-      userName = "sridhar.ratnakumar@juspay.in";
+    "eelcovv@gmail.com" = GmailSettings // {
+      realName = "Eelco van Vliet";
+      address = "eelcovv@gmail.com";
+      userName = "eelcovv@gmail.com";
       passwordCommand = "op read op://Personal/Google-Juspay/home-manager";
     };
   };

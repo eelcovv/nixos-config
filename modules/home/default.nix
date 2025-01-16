@@ -7,6 +7,7 @@
     ./profiles/security.nix
     ./profiles/socialmedia.nix
     ./profiles/multimedia.nix
+    ./profiles/officetools.nix
     ./all/tmux.nix
     ./all/neovim
     # ./helix.nix
