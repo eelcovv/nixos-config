@@ -10,6 +10,7 @@ in
 {
   home.packages = with pkgs; [
     git-filter-repo
+    pre-commit
   ];
 
   programs.git = {

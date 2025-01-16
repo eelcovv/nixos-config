@@ -3,7 +3,7 @@
   programs.kitty = {
     enable = true;
     # Pick "name" from https://github.com/kovidgoyal/kitty-themes/blob/master/themes.json
-    themeFile = "1984_dark";
+    themeFile = "OneDark-Pro";
     font = {
       name = "Monaco";
       size = 14;

@@ -1,4 +1,4 @@
-{ flake, pkgs, ... }:
+{ config, flake, pkgs, ... }:
 
 let
   inherit (flake) inputs;
@@ -21,6 +21,7 @@ in
   # Use latest kernel
   boot.kernelPackages = pkgs.linuxPackages_latest;
 
+
   services.openssh.enable = true;
   services.tailscale.enable = true;
   # services.fprintd.enable = true; -- bad UX
@@ -39,6 +40,9 @@ in
     v4l-utils
     usbutils
     libwebcam
+    fswebcam
+    hw-probe
+
   ];
   # run video driver test with
   #  gst_all_1.gst-plugins-base
@@ -46,8 +50,15 @@ in
   #  gst_all_1.gst-plugins-bad
   #  gst_all_1.gst-plugins
 
-
-
+  boot.extraModulePackages = with config.boot.kernelPackages;
+    [ v4l2loopback.out ];
+  boot.kernelModules = [ "v4l2loopback" ];
+  boot.extraModprobeConfig = ''
+    # exclusive_caps: Skype, Zoom, Teams etc. will only show device when actually streaming
+    # card_label: Name of virtual camera, how it'll show up in Skype, Zoom, Teams
+    # https://github.com/umlaeute/v4l2loopback
+    options v4l2loopback exclusive_caps=1 card_label="Virtual Camera"
+  '';
 
 
   # https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
