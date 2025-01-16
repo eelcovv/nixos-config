@@ -7,6 +7,7 @@
     telegram-desktop
     whatsapp-for-linux
     nextcloud-client
+    zoom-us
     # jitsi-meet
   ];
 }
