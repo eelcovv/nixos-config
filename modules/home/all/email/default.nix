@@ -23,7 +23,7 @@ let
 in
 {
   imports = [
-    ./himalaya.nix
+    # ./himalaya.nix
     ./thunderbird.nix
   ];
   accounts.email.accounts = {
@@ -39,7 +39,7 @@ in
       realName = "Eelco van Vliet";
       address = "eelcovv@gmail.com";
       userName = "eelcovv@gmail.com";
-      passwordCommand = "op read op://Personal/Google-Juspay/home-manager";
+      passwordCommand = "op read op://Personal/Google-Eelco/home-manager";
     };
   };
 }

@@ -13,7 +13,7 @@
   };
 
   accounts.email.accounts = {
-    "eelco@davelap.nl".thunderbird = {
+    "eelco@davelab.nl".thunderbird = {
       enable = true;
     };
     "eelcovv@gmail.com".thunderbird = {

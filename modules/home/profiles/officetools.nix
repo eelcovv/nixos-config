@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
-    ../all/email/default.nix
+    ../all/email
   ];
   home.packages = with pkgs; [
     telegram-desktop
