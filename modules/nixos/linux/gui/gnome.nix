@@ -10,43 +10,43 @@
         settings = {
 
           # For all configurations below, add an entry here
-          ["org/gnome/settings-daemon/plugins/media-keys"] = {
-          custom-keybindings = [
-            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/",
-            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/",
-            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/",
-            "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
-          ];
-        };
+          "org/gnome/settings-daemon/plugins/media-keys" = {
+            custom-keybindings = [
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0/",
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1/",
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/",
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
+            ];
+          };
 
-        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-          binding = "<Super>t";
-          command = "kitty";
-          name = "Kitty Console";
-        };
+          "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
+            binding = "<Super>t";
+            command = "kitty";
+            name = "Kitty Console";
+          };
 
-        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
-          binding = "<Super>g";
-          command = "google-chrome-stable";
-          name = "Google Chrome";
-        };
+          "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {
+            binding = "<Super>g";
+            command = "google-chrome-stable";
+            name = "Google Chrome";
+          };
 
-        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
-          binding = "<Super>c";
-          command = "code";
-          name = "VSCode";
-        };
+          "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2" = {
+            binding = "<Super>c";
+            command = "code";
+            name = "VSCode";
+          };
 
-        "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
-          binding = "<Super>b";
-          command = "thunderbird";
-          name = "ThunderBird";
-        };
+          "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+            binding = "<Super>b";
+            command = "thunderbird";
+            name = "ThunderBird";
+          };
 
-        #"org/gnome/shell/window-switcher" = {
-        #  current-workspace-only = true;
-        #};
-      };
+          #"org/gnome/shell/window-switcher" = {
+          #  current-workspace-only = true;
+          #};
+        };
       }
     ];
   };
