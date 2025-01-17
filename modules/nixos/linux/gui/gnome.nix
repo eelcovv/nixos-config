@@ -10,7 +10,7 @@
         settings = {
 
           "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
-            binding = "<Ctrl><Alt>t";
+            binding = "<Super>k";
             command = "kitty";
             name = "Kitty Console";
           };
