@@ -12,6 +12,7 @@
     ./all/neovim
     # ./helix.nix
     ./all/ssh.nix
+    ./all/zed.nix
     ./all/starship.nix
     ./all/terminal.nix
     ./all/nix.nix
