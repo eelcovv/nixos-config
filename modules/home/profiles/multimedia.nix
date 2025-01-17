@@ -7,5 +7,6 @@
     geeqie
     thumbs
     cheese
+    spotify
   ];
 }
