@@ -37,11 +37,11 @@ in
   environment.systemPackages = with pkgs; [
     vim
     git
-    v4l-utils
-    usbutils
-    libwebcam
-    fswebcam
-    hw-probe
+    #v4l-utils
+    #usbutils
+    #libwebcam
+    #fswebcam
+    #hw-probe
 
   ];
   # run video driver test with

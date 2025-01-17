@@ -1,7 +1,9 @@
 let
   iCloudMailSettings = {
     imap = {
-      host = "mail.davelab.nl";
+      host = "web0080.zxcs.nl";
+      port = 993;
+      tls.useStartTls = true;
     };
     smtp = {
       host = "mail.davelab.nl";
@@ -23,7 +25,7 @@ let
 in
 {
   imports = [
-    # ./himalaya.nix
+    ./himalaya.nix
     ./thunderbird.nix
   ];
   accounts.email.accounts = {
