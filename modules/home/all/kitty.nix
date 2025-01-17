@@ -6,10 +6,12 @@
     themeFile = "OneDark-Pro";
     font = {
       name = "Monaco";
-      size = 14;
+      size = 12;
     };
     keybindings = {
       "kitty_mod+e" = "kitten hints"; # https://sw.kovidgoyal.net/kitty/kittens/hints/
+      "ctrl+c" = "copy_and_clear_or_interrupt";
+      "ctrl+v" = "paste_from_clipboard";
     };
     settings = {
       # https://github.com/kovidgoyal/kitty/issues/371#issuecomment-1095268494
@@ -18,6 +20,7 @@
       confirm_os_window_close = "0";
       # https://github.com/kovidgoyal/kitty/issues/847
       macos_option_as_alt = "yes";
+      copy_on_select = "yes";
     };
   };
 }
