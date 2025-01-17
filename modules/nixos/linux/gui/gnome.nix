@@ -27,9 +27,15 @@
             name = "VSCode";
           };
 
-          "org/gnome/shell/window-switcher" = {
-            current-workspace-only = true;
+          "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3" = {
+            binding = "<Super>b";
+            command = "thunderbird";
+            name = "ThunderBird";
           };
+
+          #"org/gnome/shell/window-switcher" = {
+          #  current-workspace-only = true;
+          #};
         };
       }
     ];
