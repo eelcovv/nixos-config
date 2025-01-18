@@ -45,7 +45,7 @@
           };
 
           "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4" = {
-            binding = "<Super>w";
+            binding = "<Super><Shift>W";
             command = "wasistlos";
             name = "WasIstLos";
           };
