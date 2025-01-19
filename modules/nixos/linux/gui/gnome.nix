@@ -2,6 +2,7 @@
 
   # Add your custom shortcuts below
   # Run 'dconf dump /' to get the current settings
+  # to reset your current shortcuts, run 'dconf reset -f /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/'
   programs.dconf = {
     enable = true;
     profiles.user.databases = [
@@ -17,6 +18,7 @@
               "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom2/"
               "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom3/"
               "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom4/"
+              "/org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5/"
             ];
           };
 
@@ -48,6 +50,12 @@
             binding = "<Super><Shift>W";
             command = "wasistlos";
             name = "WasIstLos";
+          };
+
+          "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom5" = {
+            binding = "<Super>K";
+            command = "keeweb";
+            name = "KeeWeb";
           };
 
           #"org/gnome/shell/window-switcher" = {
