@@ -25,6 +25,7 @@
     actualism-app.url = "github:srid/actualism-app";
     omnix.url = "github:juspay/omnix";
     hyprland.url = "github:hyprwm/Hyprland/v0.46.2";
+    himalaya.url = "github:pimalaya/himalaya";
 
     # Neovim
     nixvim.url = "github:nix-community/nixvim";

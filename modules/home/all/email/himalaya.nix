@@ -12,15 +12,15 @@
   };
 
   accounts.email.accounts = {
-    "eelco@davelab.nl" = {
-      himalaya = {
-        enable = true;
-        # Don't forget to run `himalaya account sync` first!
-        settings.sync = {
-          enable = true;
-        };
-      };
-    };
+    # "eelco@davelab.nl" = {
+    #   himalaya = {
+    #     enable = true;
+    #     # Don't forget to run `himalaya account sync` first!
+    #     settings.sync = {
+    #       enable = true;
+    #     };
+    #   };
+    # };
   };
 
 }
