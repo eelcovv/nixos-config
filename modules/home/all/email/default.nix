@@ -3,12 +3,13 @@ let
     imap = {
       host = "web0080.zxcs.nl";
       port = 993;
-      tls.useStartTls = true;
+      tls.useStartTls = false;
     };
     smtp = {
-      host = "mail.davelab.nl";
-      port = 587;
-      tls.useStartTls = true;
+      host = "web0080.zxcs.nl";
+      # port = 587;
+      port = 465;
+      tls.useStartTls = false;
     };
   };
   GmailSettings = {
@@ -34,14 +35,14 @@ in
       realName = "Eelco van Vliet";
       address = "eelco@davelab.nl";
       aliases = [ "eelco@davelab.nl" ];
-      userName = "eelco";
-      passwordCommand = "op read op://Personal/iCloud-Apple/home-manager";
+      userName = "eelco@davelab.nl";
+      #passwordCommand = "op read op://Personal/iCloud-Apple/home-manager";
     };
     "eelcovv@gmail.com" = GmailSettings // {
       realName = "Eelco van Vliet";
       address = "eelcovv@gmail.com";
       userName = "eelcovv@gmail.com";
-      passwordCommand = "op read op://Personal/Google-Eelco/home-manager";
+      #passwordCommand = "op read op://Personal/Google-Eelco/home-manager";
     };
   };
 }
