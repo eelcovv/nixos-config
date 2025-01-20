@@ -6,19 +6,21 @@
     Hs = "himalaya account sync";
   };
 
+
   programs.himalaya = {
     enable = true;
   };
 
   accounts.email.accounts = {
-    # "eelcovv@gmail.com" = {
-    #   himalaya = {
-    #     enable = true;
-    #     # Don't forget to run `himalaya account sync` first!
-    #     settings.sync = {
-    #       enable = true;
-    #     };
-    #   };
-    # };
+    "eelco@davelab.nl" = {
+      himalaya = {
+        enable = true;
+        # Don't forget to run `himalaya account sync` first!
+        settings.sync = {
+          enable = true;
+        };
+      };
+    };
   };
+
 }
