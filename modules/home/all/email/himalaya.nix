@@ -11,14 +11,14 @@
   };
 
   accounts.email.accounts = {
-    "eelcovv@gmail.com" = {
-      himalaya = {
-        enable = true;
-        # Don't forget to run `himalaya account sync` first!
-        settings.sync = {
-          enable = true;
-        };
-      };
-    };
+    # "eelcovv@gmail.com" = {
+    #   himalaya = {
+    #     enable = true;
+    #     # Don't forget to run `himalaya account sync` first!
+    #     settings.sync = {
+    #       enable = true;
+    #     };
+    #   };
+    # };
   };
 }

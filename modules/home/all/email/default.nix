@@ -13,11 +13,13 @@ let
     };
   };
   GmailSettings = {
+    # after opening the app, go to Account Settings -> Server Settings and set Authentication method to OAuth2
     imap = {
       host = "imap.gmail.com";
       port = 993;
     };
     smtp = {
+      # after opening the app, go to Account Settings -> Server Settings and set Authentication method to OAuth2
       host = "smtp.gmail.com";
       port = 465;
       # tls.useStartTls = true;
