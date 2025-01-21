@@ -2,6 +2,7 @@
 {
   home.stateVersion = "22.11";
   imports = [
+    ./profiles/datascience.nix
     ./profiles/development.nix
     ./profiles/engingeering.nix
     ./profiles/internet.nix
