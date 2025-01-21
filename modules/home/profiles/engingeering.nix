@@ -1,6 +1,8 @@
+{ pkgs, ... }:
 {
-  imports = [
-    ../all/blender.nix
-    ../all/paraview.nix
+  home.packages = with pkgs; [
+    freecad-wayland
+    blender
+    paraview
   ];
 }
