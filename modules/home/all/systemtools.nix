@@ -4,3 +4,7 @@
     lshw
   ];
 }
+
+  f
+  programs.starship = {
+enable = true;

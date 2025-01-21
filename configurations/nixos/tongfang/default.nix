@@ -16,6 +16,7 @@ in
     (self + /modules/nixos/linux/gui/desktopish/fonts.nix)
     (self + /modules/nixos/linux/gui/_1password.nix)
     (self + /modules/nixos/linux/gui/desktopish/monitor-brightness.nix)
+    (self + /modules/nixos/linux/system/systemtools.nix)
     (self + /modules/nixos/linux/gpu/nvidea.nix)
   ];
 
