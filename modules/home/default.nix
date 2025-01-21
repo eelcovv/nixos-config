@@ -5,9 +5,11 @@
     ./profiles/datascience.nix
     ./profiles/development.nix
     ./profiles/engingeering.nix
+    ./profiles/graphics.nix
     ./profiles/internet.nix
     ./profiles/multimedia.nix
     ./profiles/officetools.nix
+    ./profiles/publishing.nix
     ./profiles/security.nix
     ./profiles/socialmedia.nix
     ./profiles/systemtools.nix

@@ -8,5 +8,7 @@
     thumbs
     cheese
     spotify
+    kdenlive
+    amarok
   ];
 }
