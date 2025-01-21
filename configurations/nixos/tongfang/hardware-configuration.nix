@@ -15,19 +15,6 @@
   boot.extraModulePackages = [ ];
 
 
-  hardware.nvidia.prime = {
-    # use this to be able to switch between amdgpu and nvidia
-    offload = {
-      enable = true;
-      enableOffloadCmd = true;
-    };
-    # Make sure to use the correct Bus ID values for your system!
-    # obtain using lshw -c display
-    # intelBusId = "PCI:0:2:0"; for intel laptops
-    nvidiaBusId = "PCI:0:1:0";
-    amdgpuBusId = "PCI:0:7:0";
-  };
-
 
   fileSystems."/" =
     {
@@ -55,4 +42,32 @@
 
   nixpkgs.hostPlatform = lib.mkDefault "x86_64-linux";
   hardware.cpu.amd.updateMicrocode = lib.mkDefault config.hardware.enableRedistributableFirmware;
+
+  # see https://nixos.wiki/wiki/Nvidia for details on this section
+  hardware.nvidia.prime = {
+    # use this to be able to switch between amdgpu and nvidia
+    #offload = {
+    #  enable = true;
+    #  enableOffloadCmd = true;
+    #};
+    # use this to automatically switch between amdgpu and nvidia
+    sync.enable = true;
+    # Make sure to use the correct Bus ID values for your system!
+    # obtain using lshw -c display
+    # intelBusId = "PCI:0:2:0"; for intel laptops
+    nvidiaBusId = "PCI:0:1:0";
+    amdgpuBusId = "PCI:0:7:0";
+  };
+
+  specialisation = {
+    on-the-go.configuration = {
+      system.nixos.tags = [ "on-the-go" ];
+      hardware.nvidia = {
+        prime.offload.enable = lib.mkForce true;
+        prime.offload.enableOffloadCmd = lib.mkForce true;
+        prime.sync.enable = lib.mkForce false;
+      };
+    };
+  };
+
 }

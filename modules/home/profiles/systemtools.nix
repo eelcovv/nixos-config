@@ -1,0 +1,6 @@
+{
+  imports = [
+    ../all/glxgears.nix
+  ];
+
+}
