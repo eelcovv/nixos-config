@@ -1,6 +1,6 @@
 {
   imports = [
-    ../all/glxgears.nix
+    ../all/gputools.nix
   ];
 
 }
