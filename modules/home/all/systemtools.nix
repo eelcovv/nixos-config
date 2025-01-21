@@ -8,5 +8,6 @@
     gpu-burn
     gpu-switch
     nvitop
+    phoronix-test-suite
   ];
 }
