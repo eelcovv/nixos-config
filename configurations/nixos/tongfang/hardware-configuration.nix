@@ -15,6 +15,20 @@
   boot.extraModulePackages = [ ];
 
 
+  hardware.nvidia.prime = {
+    # use this to be able to switch between amdgpu and nvidia
+    offload = {
+      enable = true;
+      enableOffloadCmd = true;
+    };
+    # Make sure to use the correct Bus ID values for your system!
+    # obtain using lshw -c display
+    # intelBusId = "PCI:0:2:0"; for intel laptops
+    nvidiaBusId = "PCI:0:1:0";
+    amdgpuBusId = "PCI:0:7:0";
+  };
+
+
   fileSystems."/" =
     {
       device = "/dev/disk/by-uuid/b4ea3c17-8309-499a-9ce4-4d2293cc7d0d";
