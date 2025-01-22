@@ -10,7 +10,6 @@
   #  "/nix/var/nix/profiles/system/sw/bin"
   #  "/usr/local/bin"
   #];
-  environment.localBinInPath = true;
 
   programs.zsh = {
     enable = true;
