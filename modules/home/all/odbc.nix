@@ -1,6 +1,7 @@
 { pkgs, ... }:
 {
   environment.systemPackages = with pkgs; [
-    spotify
+    libgcc
+    unixODBC
   ];
 }
