@@ -16,6 +16,10 @@ in
     (self + /modules/nixos/linux/gui/desktopish/fonts.nix)
     (self + /modules/nixos/linux/gui/_1password.nix)
     (self + /modules/nixos/linux/gui/desktopish/monitor-brightness.nix)
+    (self + /modules/nixos/linux/system/systemtools.nix)
+    (self + /modules/nixos/linux/odbc.nix)
+    #(self + /modules/nixos/linux/odbc-drivers.nix)
+    # (self + /modules/nixos/linux/gpu/nvidea.nix)
   ];
 
   # Use latest kernel
@@ -37,29 +41,7 @@ in
   environment.systemPackages = with pkgs; [
     vim
     git
-    #v4l-utils
-    #usbutils
-    #libwebcam
-    #fswebcam
-    #hw-probe
-
   ];
-  # run video driver test with
-  #  gst_all_1.gst-plugins-base
-  #  gst_all_1.gst-plugins-good
-  #  gst_all_1.gst-plugins-bad
-  #  gst_all_1.gst-plugins
-
-  boot.extraModulePackages = with config.boot.kernelPackages;
-    [ v4l2loopback.out ];
-  boot.kernelModules = [ "v4l2loopback" ];
-  boot.extraModprobeConfig = ''
-    # exclusive_caps: Skype, Zoom, Teams etc. will only show device when actually streaming
-    # card_label: Name of virtual camera, how it'll show up in Skype, Zoom, Teams
-    # https://github.com/umlaeute/v4l2loopback
-    options v4l2loopback exclusive_caps=1 card_label="Virtual Camera"
-  '';
-
 
   # https://code.visualstudio.com/docs/setup/linux#_visual-studio-code-is-unable-to-watch-for-file-changes-in-this-large-workspace-error-enospc
   boot.kernel.sysctl = {
