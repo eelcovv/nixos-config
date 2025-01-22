@@ -1,7 +1,15 @@
 { pkgs, ... }:
 {
-  environment.systemPackages = with pkgs; [
-    libgcc
-    unixODBC
-  ];
+  environment = {
+    systemPackages = with pkgs; [
+      gcc
+      gnat
+      libgcc
+      unixODBC
+    ];
+
+    unixODBCDrivers = with pkgs; [
+      unixODBC-cache
+    ];
+  };
 }
