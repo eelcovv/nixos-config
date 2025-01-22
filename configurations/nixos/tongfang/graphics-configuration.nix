@@ -8,14 +8,19 @@
     on-the-go.configuration = {
       system.nixos.tags = [ "on-the-go" ];
       hardware.nvidia = {
-        prime.offload.enable = lib.mkForce true;
-        prime.offload.enableOffloadCmd = lib.mkForce true;
-        prime.sync.enable = lib.mkForce false;
+        prime = {
+          sync.enable = lib.mkForce false;
+          nvidiaBusId = "PCI:0:1:0";
+          amdgpuBusId = "PCI:0:7:0";
+          offload.enable = lib.mkForce true;
+          offload.enableOffloadCmd = lib.mkForce true;
+        };
       };
     };
 
     nvidea.configuration = {
-      system.nixos.tags = [ "nvidea-xorg" ];
+
+      system.nixos.tags = [ "nvidea" ];
       # see https://nixos.wiki/wiki/Nvidia for details on this section
       hardware.nvidia.prime = {
         # use this to be able to switch between amdgpu and nvidia

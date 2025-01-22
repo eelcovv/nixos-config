@@ -25,7 +25,7 @@
     ./all/zellij.nix
     # ./nushell.nix
     ./all/just.nix
-    # ./powershell.nix
+    ./powershell.nix
     ./all/juspay.nix
 
     # Comment out because of annoying password prompts
