@@ -24,8 +24,8 @@
 
           "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom0" = {
             binding = "<Super>t";
-            command = "kitty";
-            name = "Kitty Console";
+            command = "ghostty";
+            name = "Ghostty Console";
           };
 
           "org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/custom1" = {

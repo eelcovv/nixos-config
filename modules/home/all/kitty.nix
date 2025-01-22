@@ -21,6 +21,8 @@
       # https://github.com/kovidgoyal/kitty/issues/847
       macos_option_as_alt = "yes";
       copy_on_select = "yes";
+      allow_remote_control = "yes";
+      enabled_layouts = "tall";
     };
   };
 }
