@@ -9,6 +9,5 @@
     php83Extensions.gd
     php83Extensions.pcntl
     php83Extensions.posix
-    php83Extensions.fpdf
   ];
 }
