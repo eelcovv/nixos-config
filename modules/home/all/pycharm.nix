@@ -1,6 +1,6 @@
 { pkgs, ... }:
 {
   home.packages = with pkgs; [
-    jetbrains.pycharm-community
+    jetbrains.pycharm-community-bin
   ];
 }
