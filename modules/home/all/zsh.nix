@@ -1,15 +1,16 @@
 { pkgs, lib, ... }:
 
 {
-  home.sessionPath = [
-    "~/.local/bin"
-  ];
+  #home.sessionPath = [
+  #  "~/.local/bin"
+  #];
   # fix later to add this conditional path
   #lib.mkIf pkgs.stdenv.isDarwin [
   #  "/etc/profiles/per-user/$USER/bin"
   #  "/nix/var/nix/profiles/system/sw/bin"
   #  "/usr/local/bin"
   #];
+  environment.localBinInPath = true;
 
   programs.zsh = {
     enable = true;
