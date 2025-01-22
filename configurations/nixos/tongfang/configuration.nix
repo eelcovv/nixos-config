@@ -5,11 +5,13 @@
     [
       # Include the results of the hardware scan.
       ./hardware-configuration.nix
+      ./graphics-configuration.nix
     ];
 
   # config.permittedInsecurePackages = [
   #   "jitsi-meet-1.0.8043"
   # ];
+
 
   # Bootloader.
   boot.loader.systemd-boot.enable = true;
