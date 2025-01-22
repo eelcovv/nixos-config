@@ -7,9 +7,5 @@
       libgcc
       unixODBC
     ];
-
-    unixODBCDrivers = with pkgs; [
-      unixODBC-cache
-    ];
   };
 }
