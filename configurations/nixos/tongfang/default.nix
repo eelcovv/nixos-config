@@ -18,7 +18,7 @@ in
     (self + /modules/nixos/linux/gui/desktopish/monitor-brightness.nix)
     (self + /modules/nixos/linux/system/systemtools.nix)
     (self + /modules/nixos/linux/odbc.nix)
-    (self + /modules/nixos/linux/odbc-drivers.nix)
+    #(self + /modules/nixos/linux/odbc-drivers.nix)
     # (self + /modules/nixos/linux/gpu/nvidea.nix)
   ];
 

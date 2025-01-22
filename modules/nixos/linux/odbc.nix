@@ -1,4 +1,4 @@
-{ pkgs, ... }:
+{ config, lib, pkgs, ... }:
 {
   environment = {
     systemPackages = with pkgs; [
@@ -6,6 +6,10 @@
       gnat
       libgcc
       unixODBC
+      lun.progress-openedge-odbc-driver
     ];
+    # environment.unixODBCDrivers = with pkgs; [
+    #   unixODBCDrivers.psql
+    # ];
   };
 }
