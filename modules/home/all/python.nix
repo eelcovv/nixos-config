@@ -2,7 +2,7 @@
 {
   home.packages = with pkgs; [
     uv
-    tox
+    python3
     twine
     poetry
   ];
