@@ -12,5 +12,6 @@
     protonmail-desktop
     biglybt # torrent client
     transmission_4 # torrent client 
+    qbittorrent
   ];
 }

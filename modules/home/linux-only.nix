@@ -10,5 +10,8 @@
     ./all/wezterm
     ./all/ghostty.nix
     ./all/kitty.nix
+
+    # editors
+    ./all/zed
   ];
 }
