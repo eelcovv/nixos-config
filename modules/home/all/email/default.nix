@@ -7,8 +7,7 @@ let
     };
     smtp = {
       host = "web0080.zxcs.nl";
-      port = 587;
-      #port = 465;
+      port = 465;
       tls.useStartTls = false;
     };
   };
