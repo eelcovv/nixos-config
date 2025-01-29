@@ -2,7 +2,8 @@
 
 let
   inherit (flake) inputs;
-  hyprlandPkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
+  # hyprlandPkgs = inputs.hyprland.packages.${pkgs.system};
+  hyperlandPkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
 in
 {
   programs.hyprland = {
