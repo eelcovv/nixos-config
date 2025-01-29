@@ -10,6 +10,8 @@
       libwebcam
       fswebcam
       asciicam
+      htop
+      nnn
     ];
   };
 }
