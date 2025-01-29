@@ -12,6 +12,7 @@
       asciicam
       htop
       nnn
+      bc
     ];
   };
 }
