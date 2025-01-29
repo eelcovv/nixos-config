@@ -2,12 +2,11 @@
 
 let
   inherit (flake) inputs;
-  # hyprlandPkgs = inputs.hyprland.packages.${pkgs.system};
   hyperlandPkgs = inputs.hyprland.packages.${pkgs.stdenv.hostPlatform.system};
 in
 {
   programs.hyprland = {
-    enable = true;
+    enable = false;
     # set the flake package
     package = hyprlandPkgs.hyprland;
     # make sure to also set the portal package, so that they are in sync
