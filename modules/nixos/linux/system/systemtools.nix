@@ -13,6 +13,7 @@
       htop
       nnn
       bc
+      mlr
     ];
   };
 }
