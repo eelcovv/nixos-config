@@ -7,8 +7,8 @@ let
     };
     smtp = {
       host = "web0080.zxcs.nl";
-      # port = 587;
-      port = 465;
+      port = 587;
+      #port = 465;
       tls.useStartTls = false;
     };
   };
@@ -28,7 +28,7 @@ let
 in
 {
   imports = [
-    ./himalaya.nix
+    # ./himalaya.nix
     ./thunderbird.nix
   ];
   accounts.email.accounts = {
