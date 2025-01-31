@@ -6,8 +6,9 @@ default:
 local:
     nix run
 
+# update the flakes
 update:
-    nix flake update
+    nix flake update 
 
 # Run this before `nix run` to build the current configuration
 [group('main')]
