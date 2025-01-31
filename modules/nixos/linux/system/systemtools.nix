@@ -13,7 +13,7 @@
       htop
       nnn
       bc
-      mlr
+      miller
     ];
   };
 }
