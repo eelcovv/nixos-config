@@ -35,8 +35,9 @@ in
     dataDir = "/home/${user}/.syncthing";
   };
 
-  services.xserver.xkb = {
-    layout = lib.mkForce "us,th";
+  services.xserver = {
+    enable = true;
+    layout = lib.mkDefault "us,th";
     xkbOptions = lib.mkDefault "grp:alt_shift_toggle";
   };
 
