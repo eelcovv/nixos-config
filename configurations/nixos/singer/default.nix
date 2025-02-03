@@ -59,4 +59,5 @@ in
       hashedPassword = "$6$vtrOzjsvXsk7o2Tx$xXdmK95zmRqNEi9AH4CaTkk/Se/y9K09YejyAIUIn8SY8K5hFEspDt4mI0ngLgTtA.ohUNL0eRQ0vpP10RAkA.";
     };
 
-  }
+  };
+}
