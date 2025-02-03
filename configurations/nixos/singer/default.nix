@@ -35,6 +35,13 @@ in
     dataDir = "/home/${user}/.syncthing";
   };
 
+  services.xserver = {
+    enable = true;
+    layout = "us,th";
+    xkbOptions = "grp:alt_shift_toggle";
+  };
+
+
   programs.nix-ld.enable = true; # for vscode server
   programs.steam.enable = true;
 
