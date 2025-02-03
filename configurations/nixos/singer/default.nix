@@ -66,7 +66,8 @@ in
       isNormalUser = true;
       description = "Eelco van Vliet";
       extraGroups = [ "wheel" "networkmanager" ];
-      hashedPassword = "$6$TQo4fA0v.F6W6af5$A6pcXt/MbbRoytgKrB.FjjQLdwbJscJuotXiynydg.G.F5UPK9q2zizVYDgWJrxBM0p.bxlJM6NvIIMoB50WL1";
+      hashedPassword = "$6$WOHTbNdGulyctlr7$GFAHGKw9ItP9pM2.FadNoo//HdL96/huBcZ9f2ea8keTSBMDThQz6gHBAPYaST73FtPtcaF7RfO/2ZN0.SqE2.";
+
     };
 
     por = {
@@ -77,18 +78,4 @@ in
     };
 
   };
-
-  # Ensure both users are added to the login page
-  services.xserver.displayManager =
-    {
-
-      lib.mkForce lightdm = {
-        enable = true;
-        greeters = {
-          gtk = {
-            enable = true;
-          };
-        };
-      };
-    };
 }
