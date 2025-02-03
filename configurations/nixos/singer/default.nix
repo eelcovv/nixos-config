@@ -35,11 +35,12 @@ in
     dataDir = "/home/${user}/.syncthing";
   };
 
-  services.xserver = {
+  services.xserver.xkb = {
     enable = true;
-    layout = lib.mkDefault "us,th";
+    layout = lib.mkForce "us,th";
     xkbOptions = lib.mkDefault "grp:alt_shift_toggle";
   };
+
 
 
   programs.nix-ld.enable = true; # for vscode server
@@ -60,6 +61,7 @@ in
 
   # hashed password for eelco and por created by 'makepasswd -m sha-512'
   users.users = {
+
     eelco = {
       isNormalUser = true;
       description = "Eelco van Vliet";
@@ -67,9 +69,6 @@ in
       hashedPassword = "$6$QgaVFSFI.ERpcYoc$0b6kBQHDdmJ33JBd0aOekLNTcmcwPcUACmAPVIE6jQLUsaAf2K2kmew87PTonU7vmzUk82aX73SAQlZv//GUN1";
     };
 
-  };
-
-  users.users = {
     por = {
       isNormalUser = true;
       description = "Karnrawee Mangkang";
