@@ -36,7 +36,6 @@ in
   };
 
   services.xserver.xkb = {
-    enable = true;
     layout = lib.mkForce "us,th";
     xkbOptions = lib.mkDefault "grp:alt_shift_toggle";
   };
