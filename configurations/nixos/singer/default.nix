@@ -66,7 +66,7 @@ in
       isNormalUser = true;
       description = "Eelco van Vliet";
       extraGroups = [ "wheel" "networkmanager" ];
-      hashedPassword = "$6$QgaVFSFI.ERpcYoc$0b6kBQHDdmJ33JBd0aOekLNTcmcwPcUACmAPVIE6jQLUsaAf2K2kmew87PTonU7vmzUk82aX73SAQlZv//GUN1";
+      hashedPassword = "$6$TQo4fA0v.F6W6af5$A6pcXt/MbbRoytgKrB.FjjQLdwbJscJuotXiynydg.G.F5UPK9q2zizVYDgWJrxBM0p.bxlJM6NvIIMoB50WL1";
     };
 
     por = {
@@ -76,5 +76,15 @@ in
       hashedPassword = "$6$vtrOzjsvXsk7o2Tx$xXdmK95zmRqNEi9AH4CaTkk/Se/y9K09YejyAIUIn8SY8K5hFEspDt4mI0ngLgTtA.ohUNL0eRQ0vpP10RAkA.";
     };
 
+  };
+
+  # Ensure both users are added to the login page
+  services.xserver.displayManager.lightdm = {
+    enable = true;
+    greeters = {
+      gtk = {
+        enable = true;
+      };
+    };
   };
 }
