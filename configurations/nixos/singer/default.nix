@@ -51,6 +51,17 @@ in
   # https://unix.stackexchange.com/q/659901/14042
   services.gnome.gnome-keyring.enable = true;
 
+  # hashed password for eelco and por created by 'makepasswd -m sha-512'
+  users.users = {
+    eelco = {
+      isNormalUser = true;
+      description = "Eelco van Vliet";
+      extraGroups = [ "wheel" "networkmanager" ];
+      hashedPassword = "$6$QgaVFSFI.ERpcYoc$0b6kBQHDdmJ33JBd0aOekLNTcmcwPcUACmAPVIE6jQLUsaAf2K2kmew87PTonU7vmzUk82aX73SAQlZv//GUN1";
+    };
+
+  };
+
   users.users = {
     por = {
       isNormalUser = true;
