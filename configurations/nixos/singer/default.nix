@@ -1,4 +1,4 @@
-{ config, flake, pkgs, ... }:
+{ config, flake, pkgs, lib, ... }:
 
 let
   inherit (flake) inputs;
