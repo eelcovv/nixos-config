@@ -6,6 +6,10 @@ default:
 local:
     nix run
 
+# Build the vm of singer
+vm_singer:
+    nixos-rebuild build-vm --flake .#singer 
+
 # update the flakes
 update:
     nix flake update 
