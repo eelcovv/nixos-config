@@ -22,16 +22,6 @@ in
       enable = true;
       userName = flake.config.me.fullname;
       userEmail = flake.config.me.email;
-      diff =
-        {
-          # tool = vscode
-          tool = "difftastic";
-          options = {
-            difftastic = {
-              # Use the default settings
-            };
-          };
-        };
       #difftool ={
       #  vscode = {
       #    cmd = "code";
