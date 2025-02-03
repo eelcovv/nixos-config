@@ -79,12 +79,16 @@ in
   };
 
   # Ensure both users are added to the login page
-  services.xserver.displayManager.lightdm = {
-    enable = true;
-    greeters = {
-      gtk = {
+  services.xserver.displayManager =
+    {
+
+      lib.mkForce lightdm = {
         enable = true;
+        greeters = {
+          gtk = {
+            enable = true;
+          };
+        };
       };
     };
-  };
 }
