@@ -10,6 +10,10 @@ local:
 vm_singer:
     nixos-rebuild build-vm --flake .#singer 
 
+# Build the vm of tongfang
+vm_tongfang:
+    nixos-rebuild build-vm --flake .#tongfang 
+
 # update the flakes
 update:
     nix flake update 
