@@ -15,6 +15,7 @@
 
     # WMish things
     ./xmonad
+
     #./taffybar # Disabled, because it rarely works (and memory hungry)
     # ./xmobar # shit UX
   ];
@@ -24,6 +25,7 @@
     mpv
     youtube-dl
     xorg.xmessage
+    (callPackage ./ptgui.nix { src = /var/lib/ptgui/PTGui_Pro_12.27.tar.gz; version = "Pro 12.27"; })
   ];
 
   services.xserver = {
