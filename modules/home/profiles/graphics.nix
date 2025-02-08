@@ -1,7 +1,7 @@
 { pkgs, ... }:
 {
   imports = [
-    ../all/ptgui.nix
+    ../all/ptgui
   ];
 
   home.packages = with pkgs; [
