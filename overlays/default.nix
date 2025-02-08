@@ -16,6 +16,5 @@ self: super: {
   actualism-app = inputs.actualism-app.packages.${self.system}.default;
   omnix = inputs.omnix.packages.${self.system}.default;
   git-merge-and-delete = self.callPackage "${packages}/git-merge-and-delete.nix" { };
-  ptgui = self.callPackage "${packages}/ptgui.nix" { src = /var/lib/ptgui/PTGui_Pro_13.0.tar.gz; version = "Pro 13.0"; };
 }
 
