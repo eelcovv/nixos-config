@@ -18,7 +18,7 @@
 #
 # Multiple versions of PTGui can be installed by adding multiple lines to environment.systemPackages.
 #####################################
-{ pkgs, version, ... }:
+{ pkgs, src, version, ... }:
 with pkgs;
 let
   versionhash = (builtins.hashString "sha1" version);
@@ -27,14 +27,9 @@ let
 in
 stdenvNoCC.mkDerivation {
   inherit version;
+  inherit src;
   inherit gdkbackendprefix;
   pname = "ptgui";
-
-  src = builtins.fetchTarball {
-    url = "file:///nix/store/25hxfzmwkc8nv1k6rhcm3x2ffhz7lbx0-PTGui_13.0.tar.gz";
-    sha256 = "01k4pn2xrsd5zqrbkl4ivnibqfizzbg8iydy8yl8fk7ssbb3rjh1"; # Replace with actual sha256 hash
-  };
-
 
   nativeBuildInputs = [ autoPatchelfHook ];
 
