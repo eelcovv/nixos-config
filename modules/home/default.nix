@@ -10,7 +10,7 @@ in
   home.stateVersion = "22.11";
   imports =
     (
-      if isEelco then [
+      if true then [
         ./profiles/development.nix
         ./profiles/datascience.nix
         ./profiles/engingeering.nix
@@ -18,13 +18,12 @@ in
     )
     ++
     (
-      if isTongfang then [
+      if false then [
         ./all/ptgui
       ] else [ ]
     )
     ++
     [
-      ./profiles/eelco.nix
       ./profiles/graphics.nix
       ./profiles/internet.nix
       ./profiles/multimedia.nix
