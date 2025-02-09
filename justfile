@@ -6,8 +6,8 @@ default:
 local:
     nix run
 
-local-impure:
-    sudo nixos-rebuild switch --impure --flake .#tongfang
+local-tongfang:
+    sudo nixos-rebuild switch --show-trace --flake .#tongfang
  
 # Build the vm of singer
 vm_singer:
