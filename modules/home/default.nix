@@ -18,7 +18,7 @@ in
     )
     ++
     (
-      if false then [
+      if isTongfang then [
         ./all/ptgui
       ] else [ ]
     )
