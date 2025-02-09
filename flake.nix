@@ -33,6 +33,12 @@
       inputs.nixpkgs.follows = "nixpkgs";
     };
 
+    #ptgui = {
+    #  url = "/nix/store/25hxfzmwkc8nv1k6rhcm3x2ffhz7lbx0-PTGui_13.0.tar.gz"; 
+    #  version = "Pro 13.0";
+    #  inputs.nixpkgs.follows = "nixpkgs";
+    #};
+
     uv2nix = {
       url = "github:pyproject-nix/uv2nix";
       inputs.pyproject-nix.follows = "pyproject-nix";
