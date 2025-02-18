@@ -4,5 +4,6 @@
     "editor.formatOnSave": true,
     "editor.formatOnType": true,
     "nix.enableLanguageServer": true,
-    "nix.serverPath": "nixd"
+    "nix.serverPath": "nixd",
+    "workbench.colorTheme": "Default Dark Modern"
 }

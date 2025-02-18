@@ -6,6 +6,21 @@ default:
 local:
     nix run
 
+local-tongfang:
+    sudo nixos-rebuild switch --show-trace --flake .#tongfang
+ 
+# Build the vm of singer
+vm_singer:
+    nixos-rebuild build-vm --flake .#singer 
+
+# Build the vm of tongfang
+vm_tongfang:
+    nixos-rebuild build-vm --flake .#tongfang 
+
+# update the flakes
+update:
+    nix flake update 
+
 # Run this before `nix run` to build the current configuration
 [group('main')]
 nom:

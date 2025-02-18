@@ -5,7 +5,7 @@
   ];
   home.packages = with pkgs; [
     thunderbird
-    himalaya
+    # himalaya
     libreoffice
   ];
 }

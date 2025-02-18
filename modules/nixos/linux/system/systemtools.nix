@@ -5,6 +5,15 @@
       lshw
       p7zip
       p7zip-rar
+      toybox
+      pciutils
+      libwebcam
+      fswebcam
+      asciicam
+      htop
+      nnn
+      bc
+      miller
     ];
   };
 }
