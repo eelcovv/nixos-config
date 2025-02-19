@@ -4,6 +4,7 @@ let
   userName = builtins.getEnv "USER";
   isEelco = ((builtins.match ".*eelco.*" userName) != null);
   isTongfang = ((builtins.match ".*tongfang.*" hostName) != null); # userName == "eelco";
+  isAlloy = ((builtins.match ".*alloy.*" hostName) != null); # userName == "eelco";
 in
 {
 
@@ -18,7 +19,7 @@ in
     )
     ++
     (
-      if isTongfang then [
+      if isTongfang || isAlloy then [
         ./all/ptgui
       ] else [ ]
     )
