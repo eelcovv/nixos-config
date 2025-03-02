@@ -17,6 +17,7 @@
   boot.loader.systemd-boot.enable = true;
   boot.loader.efi.canTouchEfiVariables = true;
 
+  boot.initrd.luks.devices."luks-ef0fc5e3-81cc-4d6d-bd1a-f4746a961c2a".device = "/dev/disk/by-uuid/ef0fc5e3-81cc-4d6d-bd1a-f4746a961c2a";
   networking.hostName = "tongfang"; # Define your hostname.
   # networking.wireless.enable = true;  # Enables wireless support via wpa_supplicant.
 
