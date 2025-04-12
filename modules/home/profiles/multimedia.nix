@@ -3,12 +3,12 @@
   home.packages = with pkgs; [
     vlc
     mplayer
-    gwenview
+    kdePackages.gwenview
     geeqie
     thumbs
     cheese
     spotify
-    kdenlive
+    kdePackages.kdenlive
     amarok
   ];
 }
