@@ -1,9 +1,9 @@
 {
-    "search.followSymlinks": false,
-    "editor.defaultFormatter": "B4dM4n.nixpkgs-fmt",
-    "editor.formatOnSave": true,
-    "editor.formatOnType": true,
-    "nix.enableLanguageServer": true,
-    "nix.serverPath": "nixd",
-    "workbench.colorTheme": "Default Dark Modern"
+  "search.followSymlinks": false,
+  "editor.defaultFormatter": "B4dM4n.nixpkgs-fmt",
+  "editor.formatOnSave": true,
+  "editor.formatOnType": true,
+  "nix.enableLanguageServer": true,
+  "nix.serverPath": "nixd",
+  "workbench.colorTheme": "Atom One Light"
 }
